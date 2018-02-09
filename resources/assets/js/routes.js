@@ -3,17 +3,20 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
 
+import HomeComponent from './components/HomeComponent'
+import ExampleComponent from './components/ExampleComponent'
+
 export default new VueRouter({
     routes: [
         {
             path: '/',
             name: 'home',
-            component: Vue.component('home-component', require('./components/HomeComponent.vue'))
+            component: HomeComponent
         },
         {
             path: '/example',
             name: 'example',
-            component: Vue.component('example-component', require('./components/ExampleComponent.vue'))
+            component: ExampleComponent
         }
     ]
 });
