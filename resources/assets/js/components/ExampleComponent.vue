@@ -9,22 +9,11 @@
                         I'm an example component 123 !
                     </div>
                 </div>
-                {{ response }}
             </div>
         </div>
     </div>
 </template>
 
 <script>
-    export default {
-        mounted() {
-            console.log('Component mounted.');
-            axios.get('/', { headers: { Authorization: `Bearer test` }}).then(console.log('done'));
-        },
-        data() {
-            return {
-                response: 'test'
-            }
-        }
-    }
+    export default {}
 </script>

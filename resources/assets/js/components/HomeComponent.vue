@@ -15,14 +15,5 @@
 </template>
 
 <script>
-    export default {
-        mounted() {
-
-        },
-        data() {
-            return {
-
-            }
-        }
-    }
+    export default {}
 </script>
