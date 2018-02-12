@@ -4,7 +4,8 @@
 
         <p>
             <router-link :to="{ name: 'home' }">Home</router-link> |
-            <router-link :to="{ name: 'example' }">Example</router-link>
+            <router-link :to="{ name: 'example' }">Example</router-link> |
+            <router-link :to="{ name: 'login' }">Login</router-link>
         </p>
 
         <div>

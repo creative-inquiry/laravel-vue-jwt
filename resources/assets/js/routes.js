@@ -5,6 +5,7 @@ Vue.use(VueRouter)
 
 import HomeComponent from './components/HomeComponent'
 import ExampleComponent from './components/ExampleComponent'
+import LoginComponent from './components/LoginComponent'
 
 export default new VueRouter({
     routes: [
@@ -17,6 +18,11 @@ export default new VueRouter({
             path: '/example',
             name: 'example',
             component: ExampleComponent
+        },
+        {
+            path: '/login',
+            name: 'login',
+            component: LoginComponent
         }
     ]
 });
