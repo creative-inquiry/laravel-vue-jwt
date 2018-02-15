@@ -14,6 +14,7 @@
                 <div class="panel-heading">Dashboard</div>
                 <div class="panel-body">
                     <p>This is the dashboard</p>
+                    <p>Data: {{ data }}</p>
                 </div>
             </div>
         </div>
@@ -23,10 +24,27 @@
 <script>
     import store from '../store'
     export default {
+        data() {
+            return {
+                data: 'nothing'
+            }
+        },
         beforeCreate() {
             if (!store.state.isLoggedIn) {
                 this.$router.push({ name: 'login' })
             }
+        },
+        mounted() {
+            axios.get('/api/dashboard', {
+                headers: {
+                    Authorization: 'Bearer ' + localStorage.getItem('token')
+                }
+            })
+            .then(response => {
+                this.data = response.data.data
+            }).catch(error => {
+
+            })
         }
     }
 </script>
