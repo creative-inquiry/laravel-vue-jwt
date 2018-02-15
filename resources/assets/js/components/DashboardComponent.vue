@@ -12,5 +12,12 @@
 </template>
 
 <script>
-    export default {}
+    import store from '../store'
+    export default {
+        beforeCreate() {
+            if (!store.state.isLoggedIn) {
+                this.$router.push({ name: 'login' })
+            }
+        }
+    }
 </script>
