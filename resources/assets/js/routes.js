@@ -3,7 +3,6 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
 
-import HomeComponent from './components/HomeComponent'
 import DashboardComponent from './components/DashboardComponent'
 import LoginComponent from './components/LoginComponent'
 import LogoutComponent from './components/LogoutComponent'
@@ -12,8 +11,7 @@ export default new VueRouter({
     routes: [
         {
             path: '/',
-            name: 'home',
-            component: HomeComponent
+            redirect: { name: 'login' }
         },
         {
             path: '/dashboard',
