@@ -4,7 +4,7 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 import HomeComponent from './components/HomeComponent'
-import ExampleComponent from './components/ExampleComponent'
+import DashboardComponent from './components/DashboardComponent'
 import LoginComponent from './components/LoginComponent'
 
 export default new VueRouter({
@@ -15,9 +15,9 @@ export default new VueRouter({
             component: HomeComponent
         },
         {
-            path: '/example',
-            name: 'example',
-            component: ExampleComponent
+            path: '/dashboard',
+            name: 'dashboard',
+            component: DashboardComponent
         },
         {
             path: '/login',
