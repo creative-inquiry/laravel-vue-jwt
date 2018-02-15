@@ -6,6 +6,7 @@ Vue.use(VueRouter)
 import HomeComponent from './components/HomeComponent'
 import DashboardComponent from './components/DashboardComponent'
 import LoginComponent from './components/LoginComponent'
+import LogoutComponent from './components/LogoutComponent'
 
 export default new VueRouter({
     routes: [
@@ -23,6 +24,11 @@ export default new VueRouter({
             path: '/login',
             name: 'login',
             component: LoginComponent
+        },
+        {
+            path: '/logout',
+            name: 'logout',
+            component: LogoutComponent
         }
     ]
 });
