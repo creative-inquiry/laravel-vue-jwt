@@ -16,13 +16,13 @@
                         <p>Data: {{ data }}</p>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
 </template>
 
 <script>
-    import store from '../store'
     export default {
         data() {
             return {

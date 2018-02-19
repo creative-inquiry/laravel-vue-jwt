@@ -29,11 +29,11 @@ const routes = [
         name: 'logout',
         component: LogoutComponent
     }
-];
+]
 
 const router = new VueRouter({
     routes
-});
+})
 
 router.beforeEach((to, from, next) => {
 
@@ -53,4 +53,4 @@ router.beforeEach((to, from, next) => {
     next()
 });
 
-export default router;
+export default router
