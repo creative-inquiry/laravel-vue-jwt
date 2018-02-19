@@ -29,11 +29,6 @@
                 data: 'nothing'
             }
         },
-        beforeCreate() {
-            if (!store.state.isLoggedIn) {
-                this.$router.push({ name: 'login' })
-            }
-        },
         mounted() {
             axios.get('/api/dashboard', {
                 headers: {
