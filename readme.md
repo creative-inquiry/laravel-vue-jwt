@@ -10,7 +10,7 @@ Laravel version 5.5
 
 ## Requirements
 
-- (Laravel server requirements)[https://laravel.com/docs/5.5#server-requirements]
+- [Laravel server requirements](https://laravel.com/docs/5.5#server-requirements)
 - Laravel 5.5 requires PHP 7.0 or later
 
 ## Setting up the project
