@@ -8,12 +8,17 @@ Laravel version 5.5
 
 [Blog post - Part 2](http://blog.peterplucinski.com/setting-up-jwt-authentication-with-laravel-and-vue-part-2/)
 
+## Requirements
+
+- (Laravel server requirements)[https://laravel.com/docs/5.5#server-requirements]
+- Laravel 5.5 requires PHP 7.0 or later
+
 ## Setting up the project
 
 1. Clone the repository
 1. Run `composer install`
 1. Configure Laravel directory permissions ([documentation](https://laravel.com/docs/5.5))
-1. Setup database configuration inside `.env`
+1. Create a database and setup the database configuration inside `.env`
 1. Run `php artisan migrate`
 1. Run `php artisan jwt:secret`
 1. Run `npm install`
