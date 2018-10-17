@@ -19,6 +19,7 @@ Laravel version 5.5
 1. Run `composer install`
 1. Configure Laravel directory permissions ([documentation](https://laravel.com/docs/5.5))
 1. Create a database and setup the database configuration inside `.env`
+1. Run `php artisan key:generate`
 1. Run `php artisan migrate`
 1. Run `php artisan jwt:secret`
 1. Run `npm install`
