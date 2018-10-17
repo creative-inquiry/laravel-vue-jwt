@@ -29,5 +29,8 @@ Laravel version 5.5
 App\User::create(['name' => 'Test User', 'email' => 'test@email.com', 'password' => Hash::make('Password01')])
 ```
 
+## Build
+- Once you have made changes to the JavaScript or SCSS files you will want to run `npm run dev` or `npm run production`
+
 ![Login page](screenshot.png "Login page")
 
