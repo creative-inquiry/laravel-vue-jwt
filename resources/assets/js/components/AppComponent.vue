@@ -8,13 +8,14 @@
         created() {
 
             if(localStorage.token) {
-                axios.post('/api/auth/me', {
-                        headers: {Authorization: 'Bearer ' + localStorage.token}
-                    },
+                axios.get('/api/user', {
+                    headers: {
+                        Authorization: 'Bearer ' + localStorage.getItem('token')
+                    }
+                },
                 ).then(response => {
                     store.commit('loginUser')
                 }).catch(error => {
-
                     if (error.response.status === 401 || error.response.status === 403) {
                         store.commit('logoutUser')
                         localStorage.setItem('token', '')
